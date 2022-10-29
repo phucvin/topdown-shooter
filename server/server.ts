@@ -99,6 +99,8 @@ const store: Store = {
     if (!rooms.has(roomId)) {
       return;
     }
+    console.log("User " + userId + " joined room " + roomId);
+
     const game = rooms.get(roomId)!;
 
     // Make sure the player hasn't already spawned
@@ -182,7 +184,6 @@ const coordinator = await register({
   coordinatorHost: process.env.COORDINATOR_HOST,
   appSecret: process.env.APP_SECRET,
   authInfo: { anonymous: { separator: "-" } },
-  storeId: "store001",
   store,
 });
 
