@@ -35,3 +35,8 @@ APP_SECRET=<appSecret>
 ```
 - Start server: inside `server` directory run `npm start` (remember to `npm install` first)
 - Start client: inside `client` directory run `npm start` (remember to `npm install` first)
+
+## My notes
+appId=app-fc74dc5c-2307-4548-a952-e23046e7202c
+appSecret=secret-4e265014-2e80-4b4a-9979-b1d61da674fb
+https://3000-hathora-topdownshooter-1trfr54bxlf.ws-us73.gitpod.io/1nyh7cs9sab5k

@@ -116,6 +116,7 @@ const store: Store = {
 
   // unsubscribeUser is called when a user disconnects from a room, and is the place where you'd want to do any player-cleanup
   unsubscribeUser(roomId: bigint, userId: string): void {
+    /*
     // Make sure the room exists
     if (!rooms.has(roomId)) {
       return;
@@ -128,6 +129,7 @@ const store: Store = {
       game.physics.remove(game.players[idx].body);
       game.players.splice(idx, 1);
     }
+    */
   },
 
   // onMessage is an integral part of your game's server. It is responsible for reading messages sent from the clients and handling them accordingly, this is where your game's event-based logic should live
@@ -180,6 +182,7 @@ const coordinator = await register({
   coordinatorHost: process.env.COORDINATOR_HOST,
   appSecret: process.env.APP_SECRET,
   authInfo: { anonymous: { separator: "-" } },
+  storeId: "store001",
   store,
 });
 
