@@ -29,6 +29,7 @@ export class RoomConnection {
   }
 
   public sendMessage(msg: ClientMessage) {
+    console.log("send msg: " + JSON.stringify(msg));
     this.connection?.write(this.encoder.encode(JSON.stringify(msg)));
   }
 

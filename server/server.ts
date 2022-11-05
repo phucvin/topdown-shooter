@@ -118,6 +118,7 @@ const store: Store = {
 
   // unsubscribeUser is called when a user disconnects from a room, and is the place where you'd want to do any player-cleanup
   unsubscribeUser(roomId: bigint, userId: string): void {
+    console.log("User " + userId + " left room " + roomId);
     /*
     // Make sure the room exists
     if (!rooms.has(roomId)) {
