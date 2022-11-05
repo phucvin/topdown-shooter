@@ -15,7 +15,7 @@ while (true) {
     setInterval(function () {
         connection.write(encoder.encode("{\"type\": 2}"));
     }, 1000);
-    await new Promise(r => setTimeout(r, 2000));
+    await new Promise(r => setTimeout(r, 200));
 }
 
 // process message from backend
